@@ -33,12 +33,12 @@ VAR(IDF_PERSIST, ui_time_scale, 0, 250, VAR_MAX);
 
 VAR(IDF_PERSIST, ui_skinned, 0, 3, 3); // 0 = no backgrounds, 1 = drawn backgrounds, 2 = skinned backgrounds, 3 = skinned with overlay border
 
-VAR(IDF_PERSIST|IDF_HEX, ui_color_background, -1, 0x000000, 0xFFFFFF);                      // background color
-FVAR(IDF_PERSIST, ui_blend_background, 0, 0.8f, 1);                                         // background alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_border, -1, 0x000000, 0xFFFFFF);                          // border color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_background, -1, 0x050505, 0xFFFFFF);                      // background color
+FVAR(IDF_PERSIST, ui_blend_background, 0, 0.95f, 1);                                         // background alpha
+VAR(IDF_PERSIST|IDF_HEX, ui_color_border, -1, 0x195a9e, 0xFFFFFF);                          // border color
 FVAR(IDF_PERSIST, ui_blend_border, 0, 0.6f, 1);                                             // border alpha
 
-VAR(IDF_PERSIST|IDF_HEX, ui_color_hover, -1, 0xF0A0A0, 0xFFFFFF);                           // hover color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_hover, -1, 0x65ace7, 0xFFFFFF);                           // hover color
 FVAR(IDF_PERSIST, ui_scale_hover, 0, 0.3f, 1);
 FVAR(IDF_PERSIST, ui_blend_hover, 0, 0.9f, 1);                                              // hover alpha
 
@@ -46,41 +46,42 @@ VAR(IDF_PERSIST, ui_status_line, 0, 1, 1);
 VAR(IDF_PERSIST, ui_tooltips, 0, 1, 1);
 VAR(IDF_PERSIST, ui_time_tooltip, 0, 500, VAR_MAX);
 VAR(IDF_PERSIST, ui_fade_tooltip, 0, 500, VAR_MAX);
-VAR(IDF_PERSIST|IDF_HEX, ui_color_tooltip, -1, 0x000000, 0xFFFFFF);                         // tooltip color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_tooltip, -1, 0x080808, 0xFFFFFF);                         // tooltip color
 FVAR(IDF_PERSIST, ui_blend_tooltip, 0, 0.8f, 1);                                            // tooltip alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_tooltip_border, -1, 0x808080, 0xFFFFFF);                  // tooltip border color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_tooltip_border, -1, 0x0d4178, 0xFFFFFF);                  // tooltip border color
 FVAR(IDF_PERSIST, ui_blend_tooltip_border, 0, 0.6f, 1);                                     // tooltip border alpha
 VAR(IDF_PERSIST, ui_skin_tooltip_border, 0, 1, 1);
 
-VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_background, -1, 0x202020, 0xFFFFFF);            // textfield background color
-FVAR(IDF_PERSIST, ui_blend_textfield_background, 0, 0.3f, 1);                               // textfield background alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_border, -1, 0xA0A0A0, 0xFFFFFF);                // textfield border color
-FVAR(IDF_PERSIST, ui_blend_textfield_border, 0, 0.6f, 1);                                   // textfield border alpha
+VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_background, -1, 0x080808, 0xFFFFFF);            // textfield background color
+FVAR(IDF_PERSIST, ui_blend_textfield_background, 0, 0.5f, 1);                               // textfield background alpha
+VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_border, -1, 0x195a9e, 0xFFFFFF);                // textfield border color
+FVAR(IDF_PERSIST, ui_blend_textfield_border, 0, 0.75f, 1);                                   // textfield border alpha
 
-VAR(IDF_PERSIST|IDF_HEX, guifieldhitcolour, -1, 0xF04040, 0xFFFFFF);                        // field hit color
+VAR(IDF_PERSIST|IDF_HEX, guifieldhitcolour, -1, 0x1b60a8, 0xFFFFFF);                        // field hit color
 FVAR(IDF_PERSIST, guifieldhitblend, 0, 0.8f, 1);                                            // field hit alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_active, -1, 0xF04040, 0xFFFFFF);                // textfield active color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_textfield_active, -1, 0x1b60a8, 0xFFFFFF);                // textfield active color
 FVAR(IDF_PERSIST, ui_blend_textfield_active, 0, 0.9f, 1);                                   // textfield active alpha
 
-VAR(IDF_PERSIST|IDF_HEX, ui_color_slider, -1, 0x000000, 0xFFFFFF);                          // slider color
-FVAR(IDF_PERSIST, ui_blend_slider, 0, 0.3f, 1);                                             // slider alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_border, -1, 0xC0C0C0, 0xFFFFFF);                   // slider border color
-FVAR(IDF_PERSIST, ui_blend_slider_border, 0, 0.6f, 1);                                      // slider border alpha
+// slider
+VAR(IDF_PERSIST|IDF_HEX, ui_color_slider, -1, 0x050505, 0xFFFFFF);                          // slider color
+FVAR(IDF_PERSIST, ui_blend_slider, 0, 0.5f, 1);                                             // slider alpha
+VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_border, -1, 0x65ace7, 0xFFFFFF);                   // slider border color
+FVAR(IDF_PERSIST, ui_blend_slider_border, 0, 0.9f, 1);                                      // slider border alpha
 VAR(IDF_PERSIST, ui_skin_slider_border, 0, 2, 2);                       
-VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_mark, -1, 0x808080, 0xFFFFFF);                     // slider mark color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_mark, -1, 0x1b60a8, 0xFFFFFF);                     // slider mark color
 FVAR(IDF_PERSIST, ui_blend_slider_mark, 0, 0.5f, 1);                                        // slider mark alpha
-VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_mark_border, -1, 0xC0C0C0, 0xFFFFFF);              // slider mark border color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_mark_border, -1, 0x0d4178, 0xFFFFFF);              // slider mark border color
 FVAR(IDF_PERSIST, ui_blend_slider_mark_border, 0, 0.6f, 1);                                 // slider mark border alpha
 VAR(IDF_PERSIST, ui_skin_slider_mark_border, 0, 0, 2);                                      
-VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_active, -1, 0xF04040, 0xFFFFFF);                   // slider active color
-FVAR(IDF_PERSIST, ui_blend_slider_active, 0, 0.9f, 1);                                      // slider blend color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_slider_active, -1, 0x65ace7, 0xFFFFFF);                   // slider active color
+FVAR(IDF_PERSIST, ui_blend_slider_active, 0, 1, 1);                                         // slider active alpha
 
 VAR(IDF_PERSIST, guiactiveskin, 0, 1, 1);
-VAR(IDF_PERSIST|IDF_HEX, ui_color_active, -1, 0xF02020, 0xFFFFFF);                          // active color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_active, -1, 0x1b60a8, 0xFFFFFF);                          // active color
 
-VAR(IDF_PERSIST|IDF_HEX, ui_color_checkbox, -1, 0x20F020, 0xFFFFFF);                        // checkbox color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_checkbox, -1, 0x4fd93d, 0xFFFFFF);                        // checkbox color
 VAR(IDF_PERSIST|IDF_HEX, ui_color_checkbox_two, -1, 0xF020F0, 0xFFFFFF);                    // checkbox two color
-VAR(IDF_PERSIST|IDF_HEX, ui_color_radiobutton_box, -1, 0xF02020, 0xFFFFFF);                 // radiobutton box color
+VAR(IDF_PERSIST|IDF_HEX, ui_color_radiobutton_box, -1, 0x1b60a8, 0xFFFFFF);                 // radiobutton box color
 
 static bool needsinput = false, hastitle = true, hasbgfx = true, tooltipforce = false;
 static char *statusstr = NULL, *tooltipstr = NULL, *tooltip = NULL;
