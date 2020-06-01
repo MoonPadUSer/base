@@ -787,11 +787,6 @@ namespace hud
                                         }));
                                     }); 
                                 }
-<<<<<<< HEAD
-                                // platform and branch info e.g. 1.6.0-mac64-legacy
-=======
-                                // version info e.g. [major].[minor].[patch]-[platform][arch]-[versionbranch]
->>>>>>> master
                                 if(scoreverinfo && hasver)
                                 {
                                     uilist(g, {
